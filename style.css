@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f4f6f9;
+  color: #333333;
+  line-height: 1.6;
+  padding: 40px 20px;
+}
+
+.cv-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.cv-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-bottom: 24px;
+  border-bottom: 2px solid #eef2f5;
+  margin-bottom: 28px;
+}
+
+.profile-frame img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  object-position: center 35%;
+  border-radius: 50%;
+  border: 3px solid #111111;
+  display: block;
+}
+
+.header-info h1 {
+  font-size: 1.75rem;
+  color: #111111;
+  margin-bottom: 2px;
+}
+
+.header-info .subtitle {
+  font-size: 1rem;
+  color: #111111;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact-list p {
+  font-size: 0.9rem;
+  color: #555555;
+  line-height: 1.4;
+}
+
+.cv-section {
+  margin-bottom: 24px;
+}
+
+.section-title {
+  font-size: 1.2rem;
+  color: #111111;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding-bottom: 4px;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #111111;
+  display: inline-block;
+}
+
+.profile-text {
+  font-size: 0.95rem;
+  color: #444444;
+  text-align: justify;
+}
+
+.item-block {
+  margin-bottom: 16px;
+}
+
+.item-block:last-child {
+  margin-bottom: 0;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.item-header h3 {
+  font-size: 1.05rem;
+  color: #222222;
+}
+
+.item-header .date {
+  font-size: 0.85rem;
+  color: #777777;
+  font-weight: 500;
+}
+
+.item-sub {
+  font-size: 0.95rem;
+  color: #555555;
+}
+
+.institution {
+  font-size: 0.9rem;
+  color: #666666;
+  font-style: italic;
+  margin-bottom: 2px;
+}
+
+.item-desc {
+  font-size: 0.9rem;
+  color: #555555;
+}
+
+.skills-list {
+  list-style: none;
+}
+
+.skills-list li {
+  font-size: 0.95rem;
+  color: #444444;
+  margin-bottom: 8px;
+  padding-left: 18px;
+  position: relative;
+}
+
+.skills-list li::before {
+  content: "•";
+  color: #111111;
+  font-weight: bold;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+@media (max-width: 600px) {
+  .cv-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .item-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
